@@ -1,0 +1,171 @@
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.container2 {
+  margin: 0 auto;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50vh;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.container2 h2 {
+  color: #fff;
+  font-size: 3rem;
+  font-weight: 800;
+}
+.container2 p {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+header {
+  background: #333;
+  color: #fff;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.header-right ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 700;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 10px;
+}
+
+section {
+  padding: 20px 0;
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+#home {
+  background: url(./bck.jpg) no-repeat center;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+.section2 {
+  width: 100%;
+  background: linear-gradient(50deg, #4d4747, #0a0a0a);
+  padding: 1.2rem 0 2rem 0;
+}
+
+.section2_heading {
+  font-size: 5rem;
+  font-weight: bolder;
+  color: #fff;
+  letter-spacing: 1rem;
+  text-align: center;
+  text-shadow: 0.3rem 0.3rem 0.5rem #555;
+  cursor: pointer;
+  padding-bottom: 1rem;
+}
+
+.card_section {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.cards {
+  width: 410px;
+  margin: 15px;
+  background-color: #fff;
+  border-radius: 15px;
+  transition: 0.3s;
+}
+
+.card_img {
+  overflow: hidden;
+}
+
+.card_img img {
+  width: 100%;
+  height: 250px;
+  border-radius: 10px 10px 0px 0px;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.card_img img:hover {
+  transform: scale(1.5);
+}
+
+s.card_footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 1024px) {
+  .section2_heading {
+    font-size: 4rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .section2_heading {
+    font-size: 3.2rem;
+    padding-bottom: 1rem;
+  }
+}
+
+.container3 {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.profile-picture {
+  display: block;
+  margin: 0 auto 20px;
+  width: 200px;
+  border-radius: 50%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+#about h2 {
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+#about p {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.5;
+  text-align: justify;
+}

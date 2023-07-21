@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Testimonials</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css?family=Montserrat");
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        width: 100%;
+      }
+
+      body {
+        background: #1d81af;
+      }
+      .slick-dots {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      /* .container {
+        width: 80%;
+        height: 80%;
+        display: grid;
+        justify-content: center;
+        align-content: center;
+      }.header-right ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 700;
+} */
+
+      .testimonial-slider {
+        width: 500px;
+        height: 300px;
+        position: relative;
+        margin: 0 auto;
+      }
+
+      .testimonial-box::before {
+        content: "";
+        position: absolute;
+        top: 10px;
+        left: -100px;
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        background: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%),
+          rgba(255, 255, 255, 0.8);
+        box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.3);
+        z-index: -1;
+      }
+
+      .testimonial-box::after {
+        content: "";
+        position: absolute;
+        bottom: 10px;
+        right: -100px;
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        background: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%),
+          rgba(255, 255, 255, 0.8);
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+        z-index: -1;
+      }
+
+      .testimonial {
+        display: grid;
+        grid-template-rows: 1.3fr 0.7fr;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
+        padding: 10px 20px;
+        position: relative;
+      }
+      .container {
+        margin: 0 auto;
+        padding: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      .testimonial-text {
+        font-size: 16px;
+        line-height: 25px;
+        text-align: center;
+        padding: 25px 15px;
+        width: 100%;
+      }
+
+      .testimonial-author {
+        font-weight: bold;
+      }
+
+      .header-right ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      .header-right li {
+        list-style: none;
+        display: inline;
+        margin-right: 10px;
+      }
+
+      .header-right li a {
+        text-decoration: none;
+        color: #fff;
+        font-weight: 700;
+      }
+
+      header {
+        color: white;
+        background-color: #333;
+      }
+      .test_header {
+        text-align: center;
+        color: #fff;
+        font-size: 2.5rem;
+        font-weight: 600;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="header-left">
+          <h2>Subin Panicker</h2>
+        </div>
+        <nav class="header-right">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="testimonials.html">Testimonials</a></li>
+            <li><a href="Contact Me.html">Contact Me</a></li>
+            <li><a href="Services.html">Services</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <h1 class="test_header">Testimonials</h1>
+
+    <div class="container">
+      <div class="testimonial-slider">
+        <div class="testimonial">
+          <p class="testimonial-text">
+            "Working with Subin has been an absolute pleasure. Their attention
+            to detail, technical expertise, and commitment to delivering
+            high-quality projects are truly commendable. Their ability to solve
+            complex engineering problems efficiently and effectively is
+            remarkable. I highly recommend Subin for any civil engineering
+            project."
+          </p>
+          <p class="testimonial-author">
+            - Riyadh Azeez, Project Manager,Aswathy Gardens ltd
+          </p>
+        </div>
+
+        <div class="testimonial">
+          <p class="testimonial-text">
+            "Subin has been an invaluable asset to our team. Their strong
+            background in civil engineering and excellent communication skills
+            have made them an exceptional collaborator. Their innovative ideas
+            and ability to think outside the box have helped us tackle
+            challenging projects successfully. I would not hesitate to hire
+            Subin for future endeavors."
+          </p>
+          <p class="testimonial-author">
+            - Sarah Johnson, Architect,Aswathy Gardens ltd
+          </p>
+        </div>
+
+        <div class="testimonial">
+          <p class="testimonial-text">
+            "I have had the pleasure of working closely with Subin on multiple
+            construction projects. Their technical knowledge, professionalism,
+            and dedication to ensuring project deadlines are met have been truly
+            impressive. [Engineer's Name] consistently delivers exceptional work
+            while maintaining open lines of communication with the entire team.
+            I wholeheartedly endorse Subin for any civil engineering
+            undertaking."
+          </p>
+          <p class="testimonial-author">
+            - Sajin Thomas, Construction Manager,Putri builders
+          </p>
+        </div>
+
+        <div class="testimonial">
+          <p class="testimonial-text">
+            "Subin has consistently exceeded our expectations as a civil
+            engineer. Their ability to analyze complex structural problems and
+            develop practical solutions has saved us time and resources. Their
+            strong work ethic, attention to detail, and ability to work under
+            pressure make Subin an invaluable team member. I would highly
+            recommend their services without hesitation."
+          </p>
+          <p class="testimonial-author">
+            - Emily Thompson, Project Coordinator,Radianz Ltd
+          </p>
+        </div>
+
+        <div class="testimonial">
+          <p class="testimonial-text">
+            "Having worked with Subin on a large-scale infrastructure project, I
+            can confidently say that they are an exceptional civil engineer.
+            Their broad knowledge base, coupled with their meticulous approach
+            to project management, ensured the successful completion of the
+            project within the given constraints. Subin is a consummate
+            professional who goes above and beyond to deliver outstanding
+            results."
+          </p>
+          <p class="testimonial-author">- Vasukhi , City Planner</p>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".testimonial-slider").slick({
+          dots: true,
+          arrows: false,
+          infinite: true,
+          speed: 500,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          autoplay: true,
+          autoplaySpeed: 5000,
+        });
+      });
+    </script>
+  </body>
+</html>
